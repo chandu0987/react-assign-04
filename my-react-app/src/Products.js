@@ -28,10 +28,11 @@ const ProductList = ({ newProduct }) => {
 
   return (
     <div>
-      <h2>Products List</h2>
+      <h2>Products List (using Functional Components)</h2>
       <table border="1">
         <thead>
           <tr>
+            <th>ID</th>
             <th>Product Name</th>
             <th>Quantity</th>
             <th>Price</th>
@@ -40,6 +41,7 @@ const ProductList = ({ newProduct }) => {
          <tbody>
            {products.map((product) => (
              <tr key={product.id}>
+               <td>{product.id}</td>
                <td><Link to={`/products/${product.name}`}  onClick={() => handleClick()}>{product.name}</Link></td>
                <td>{product.quantity}</td>
                <td>Rs.{product.price}</td>
@@ -47,7 +49,7 @@ const ProductList = ({ newProduct }) => {
            ))}
          </tbody>
       </table><br></br>
-      <Link className='txt-space' to="/addproduct">Add Product</Link>
+      {/* <Link className='txt-space' to="/addproduct">Add Product</Link> */}
     </div>
   );
 };

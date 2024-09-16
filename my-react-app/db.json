@@ -17,12 +17,6 @@
       "name": "Dell Inspiron",
       "quantity": 4,
       "price": 50000
-    },
-    {
-      "id": "97c0",
-      "name": "Epson Printer",
-      "quantity": 1,
-      "price": 9500
     }
   ]
 }
