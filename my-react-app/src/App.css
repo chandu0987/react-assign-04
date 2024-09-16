@@ -1,0 +1,21 @@
+ul {
+  list-style-type: none; 
+  padding: 0;
+}
+li {
+  display: inline-block;
+  margin-left: 20px;
+}  
+
+link:active {
+  color: red;
+}
+
+.txt-space{
+  margin-top: 60px;
+}
+
+.error {
+  color: red;
+  font-size: 1em;
+}
